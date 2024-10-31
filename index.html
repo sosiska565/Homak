@@ -9,18 +9,18 @@
             let prise = 50;
             let click = 0;
             let num = 1;
-            document.getElementById("button1").innerText = "Купить улучшение за " + " монет";
+            document.getElementById("button1").innerText = "Купить улучшение за " + prise + " монет";
             function shop(){
                 if(click >= prise){
                     click = click - prise;
                     num = num * 2;
                     prise = prise * 2;
                     document.getElementById("text1").innerText = "Успешно";
-                    document.getElementById("button1").innerText = "Купить улучшение за " + " монет";
+                    document.getElementById("button1").innerText = "Купить улучшение за " + prise + " монет";
                 }
                 else{
                     document.getElementById("text1").innerText = "Недостаточно средств";
-                    document.getElementById("button1").innerText = "Купить улучшение за " + " монет";
+                    document.getElementById("button1").innerText = "Купить улучшение за " + prise + " монет";
                 }
             }
             function b(){
